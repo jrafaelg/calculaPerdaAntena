@@ -117,15 +117,8 @@ class RadioLinkCalculator:
         # Exibir resultados
         print("\n=== Resultados ===")
         print(f"Potência Recebida: {potencia_recebida:.2f} dBm")
-        print(potencia_recebida)
-        print(potencia_recebida - 30)
-        print((potencia_recebida - 30) / 10)
-        print(10 ** ((potencia_recebida - 30) / 10))
-        print(f"{10 ** ((potencia_recebida - 30) / 10):.2f}")
-        print(type(potencia_recebida ))
-        # precisa corrigir pois não está mostrando o valor correto
+        # valores pequenos não são exibidos
         print(f"Potência Recebida: {10 ** ((potencia_recebida - 30) / 10):.4f} mW")
-
 
 # Execução do programa
 if __name__ == "__main__":
