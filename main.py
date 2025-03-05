@@ -78,26 +78,26 @@ class RadioLinkCalculator:
 
         # Dados de entrada
         print("\nInformações de Transmissão:")
-        potencia_transmissao = float(input("Potência de transmissão do rádio (dBm): "))
-        frequencia = float(input("Frequência do sinal (Hz): "))
+        potencia_transmissao = float(input("Potência de transmissão do rádio (dBm): ").replace(',','.'))
+        frequencia = float(input("Frequência do sinal (Hz): ").replace(',','.'))
 
         # Dados da antena transmissora
         print("\nAntena Transmissora:")
-        ganho_tx = float(input("Ganho da antena (dBi): "))
-        altura_tx = float(input("Altura da antena (metros): "))
-        perda_cabo_tx = float(input("Perda de cabo (dB): "))
+        ganho_tx = float(input("Ganho da antena (dBi): ").replace(',','.'))
+        altura_tx = float(input("Altura da antena (metros): ").replace(',','.'))
+        perda_cabo_tx = float(input("Perda de cabo (dB): ").replace(',','.'))
 
         # Dados da antena receptora
         print("\nAntena Receptora:")
-        ganho_rx = float(input("Ganho da antena (dBi): "))
-        altura_rx = float(input("Altura da antena (metros): "))
-        perda_cabo_rx = float(input("Perda de cabo (dB): "))
+        ganho_rx = float(input("Ganho da antena (dBi): ").replace(',','.'))
+        altura_rx = float(input("Altura da antena (metros): ").replace(',','.'))
+        perda_cabo_rx = float(input("Perda de cabo (dB): ").replace(',','.'))
 
         # Dados de conexão
         print("\nInformações de Conexão:")
-        distancia = float(input("Distância entre antenas (metros): "))
-        perda_conector = float(input("Perda de conector (dB): "))
-        perda_centelhador = float(input("Perda de centelhador (dB): "))
+        distancia = float(input("Distância entre antenas (metros): ").replace(',','.'))
+        perda_conector = float(input("Perda de conector (dB): ").replace(',','.'))
+        perda_centelhador = float(input("Perda de centelhador (dB): ").replace(',','.'))
 
         # Calcular potência recebida
         potencia_recebida = self.calcular_potencia_recebida(
