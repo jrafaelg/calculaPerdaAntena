@@ -1,6 +1,5 @@
 import math
 
-
 class RadioLinkCalculator:
     def __init__(self):
         # Constantes físicas
